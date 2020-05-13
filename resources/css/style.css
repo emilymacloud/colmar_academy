@@ -1,3 +1,9 @@
+/* TIPS
+1. When formatting, add in a border (1px solid [any colour].
+This helps to outline where the boarder is and is such a time saver for a novice!
+
+*/
+
 /* Universal styles */
 html, body {
     color: #003049;
@@ -145,7 +151,42 @@ button {
 /* Courses Section */
 .courses {
     background-color: #CDCDCD;
+    padding-left:4.5rem;
+    padding-right:4.5rem;
+    padding-bottom: 2rem;
 }
+
+.courses .title {
+    
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.coursecards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.card {
+    background-color: white;
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height: auto;
+    width: 100%;
+}
+
+.card .coursework {
+    
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
 
 /* Thesis Section */
 .thesis {
