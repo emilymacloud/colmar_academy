@@ -34,6 +34,10 @@ html, body {
     background-color: #CDCDCD;
 }
 
+#mobile {
+    display: none;
+}
+
 
 /* NAV Section */
 nav {
@@ -43,6 +47,8 @@ nav {
 }
 
 nav .container {
+    
+    width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: .5rem;
@@ -61,18 +67,15 @@ nav .container .options {
     display: flex;
     flex-wrap: wrap;
 }
-nav .options ul {
+nav .container .options ul {
+    
     display: inline-flex;
     text-align: right;
     list-style: none;
     align-items: center;
 }
-nav .options li {
+nav .container .options li {
     padding-left: 1rem;
-}
-
-.hide {
-    display: none;
 }
 
 /* Banner Section */
@@ -112,20 +115,15 @@ button {
     
     padding-top: 2rem;
     padding-bottom: 2rem;
-    display: flex;
-    
+    display: flex; 
 }
 
 .information .side {
     height: auto;
-    width: 40%;
-    
+    width: 40%; 
     display: flex;
     display: inline-flex;
     flex-wrap: wrap;
-    
-    
-
 }
 
 .information .side .elements {
@@ -139,7 +137,8 @@ button {
 }
 
 .information .side .elements img {
-    width: 35%;
+    
+    width: 90%;
     height: auto;
     margin: 1rem;
     object-fit: cover;
@@ -270,8 +269,108 @@ footer li {
     text-align: right;
 }
 
+/* Mobile */
+@media only screen and (min-width: 0px) and (max-width: 610px) {
+    /*NAV section*/
+    #mobile {
+    display: inline-block;
+    }   
+    #desktop {
+        display: none;
+    }
+    .contain-mob {
+        width: 100%;
+        display: flex; 
+    }
+    .contain-mob .options {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contain-mob .options ul{
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;    
+        padding-right: 2rem;
+        list-style: none;
+    }
+    .flex-container {
+    }
+    /*Banner Section*/
+    .banner {
+        padding: 0px;
+        display: block;
+    }
+    .sign-up {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .main {
+        width: 100%;
+        padding: 0rem;
+    }
+    .main img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    /*Information Section*/
+    .quote {
+        display: none;
+    }
+    .information {
+        
+    }
+    .information .side {
+        
+        width: 100%;
+        display: flex;
+        display: block;
+    }
+    .information .side .elements {
+        border: 1px solid #A5A5A5; 
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    .img-contain {
+        
+        padding: 1rem;
+        
+    }
+    .information .side .elements img {
+        
+        margin: 0 auto;
+        width: 80%;
+    }
 
-
-
-
+    /*Coursework Section*/
+    .courses {
+        background-color: #EAEBEC;
+    }
+    .coursecards {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .card-mob {
+        background-color: #A5A5A5;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    /*Thesis Section*/
+    .thesis .elements {
+        display: none;
+    }
+     .vid-text {
+         display: none;
+     }
+    .video {
+        border: 1px solid blue;
+        width: 100%;
+        padding: 0;
+    }
+    
+} 
 

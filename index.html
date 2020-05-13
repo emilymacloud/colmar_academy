@@ -11,34 +11,39 @@
     <script src='main.js'></script>
     <script src="https://kit.fontawesome.com/bd52a69a09.js" crossorigin="anonymous"></script>
     <style>A {text-decoration: none;}</style>
+
 </head>
 
 <body>
 <!--Top Nav Bar-->    
 <nav>
-    <div class="container">
-        <div class="logo" id="desktop">
-            <img src="./resources/images/ic-logo.svg" alt="Logo"><p><strong>COLMAR</strong>ACADEMY</p>
+    <div class="flex-container">
+        <div class="container" id="desktop">
+            <div class="logo">
+                <img src="./resources/images/ic-logo.svg" alt="Logo"><p><strong>COLMAR</strong>ACADEMY</p>
+            </div>
+
+            <div class="options" id="desktop">
+                <ul>
+                    <li>On campus</li>
+                    <li>Online</li>
+                    <li>For companies</li>
+                    <li>Sign in</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="options" >
-            <ul>
-                <li>On campus</li>
-                <li>Online</li>
-                <li>For companies</li>
-                <li>Sign in</li>
-            </ul>
+        <div class="contain-mob" id="mobile">
+            <div class="options" >
+                <ul>
+                    <li><img src="./resources/images/ic-logo.svg" alt="logo"></li>
+                    <li><img src="./resources/images/ic-on-campus.svg" alt="on campus"></li>
+                    <li><img src="./resources/images/ic-online.svg" alt="online"></li>
+                    <li><img src="./resources/images/ic-login.svg" alt="login"></li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <div class="nav hide" id="mobile">
-        <ul>
-            <li><img src="./resources/images/ic-on-campus.svg" alt="on campus"></li>
-            <li><img src="./resources/images/ic-online.svg" alt="online"></li>
-            <li><img src="./resources/images/ic-login.svg"></li>
-        </ul>
-    </div>
-
 </nav>
 
 <!--Banner section-->
@@ -63,7 +68,7 @@
 <!--Information Section-->
 <div class="information flex-container">
     <!--Quote section-->
-    <div class="main">
+    <div class="main quote">
         <div>
             <img src="./resources/images/information-main.jpg" alt="Man reading a book">
         </div>
@@ -77,7 +82,9 @@
     <!--Side Nav Bar-->
     <div class="side">
         <div class="elements">
-            <img src="./resources/images/information-orientation.jpg" alt="Orientation Image">
+            <div class="img-contain">
+                <img src="./resources/images/information-orientation.jpg" alt="Orientation Image">
+            </div>
             <div class="detail">
                 <div><h4>Orientation date</h4></div>
                 <div><p>Tue 10/11 & Wed 10/12: 8am-3pm</p></div>
@@ -86,7 +93,9 @@
         </div>
 
         <div class="elements">
-            <img src="./resources/images/information-campus.jpg" alt="Campus">
+            <div class="img-contain">
+                <img src="./resources/images/information-campus.jpg" alt="Campus">
+            </div>
             <div class="detail">
                 <div>
                     <h4>Our campus</h4>
@@ -103,7 +112,9 @@
         </div>
 
         <div class="elements highlight">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture">
+            <div class="img-contain">
+                <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture">
+            </div>
             <div class="detail ">
                 <div>
                     <h4>Our guest lecture</h4>
@@ -128,7 +139,7 @@
         <h2>Start learning</h2>
     </div>
     
-    <div class="coursecards  flex-container">
+    <div class="coursecards  flex-container" id="desktop">
         <div class="card">
             <img src="./resources/images/course-software.jpg">
             <div class="coursework">
@@ -190,6 +201,28 @@
         </div>
     </div>
 
+    <div class="coursecards  flex-container" id="mobile">
+        <div class="card-mob">
+            <h3>Software engineering</h3>
+        </div>
+        <div class="card-mob">
+            <h3>Computer art</h3>
+        </div>
+        <div class="card-mob">
+            <h3>Design</h3>
+        </div>
+        <div class="card-mob">
+            <h3>Data</h3>
+        </div>
+        <div class="card-mob">
+            <h3>Business</h3>
+        </div>
+        <div class="card-mob">
+            <h3>Marketing</h3>
+        </div>
+
+    </div>
+
 
 </div>
 
@@ -201,7 +234,7 @@
     <div class="flex-container">
         <div class="video">
             <video src="./resources/videos/thesis.mp4" controls autoplay></video>
-            <div>
+            <div class="vid-text">
                 <h4>Reimagine urban</h4>
                 <p>Cras consequat ipsum eu quam ullamcorper luctus. Proin velit tellus, sagittis hendrerit felis in, volutpat sagittis
                 ante.</p>
