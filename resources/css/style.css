@@ -7,16 +7,27 @@ html, body {
     margin:0;
 }
 
-img {
-    margin: 10px auto;
-    height: auto;
-    width: 60%;
-}
 video {
-    margin: 10px auto;
+    margin: 0 auto;
     height: auto;
     width: 100%;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main {
+    height: auto;
+    width: 60%;
+}
+
+.main img {
+    margin: 0 auto;  
+    width: 100%;
+}
+
 
 /* NAV Section */
 nav {
@@ -64,28 +75,76 @@ nav .options li {
     background-color: #A5A5A5;
     width: 100%;
     padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: flex-start;
+.sign-up {
+    width: 40%;
+    margin: 1rem;
 }
 
-.flex-container  .text {
-    
+.sign-up .text {
+    padding-left: 1.5rem;
+    width: 80%;
+}
+
+button {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #003049;
+    border-color: transparent;
+    color: #EAEBEC;
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* Info Section */
 .information {
     background-color: #EAEBEC;
+    height: auto;
+    width: 100%;
+    margin: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+}
+
+.information .side {
+    height: auto;
+    width: 40%;
+    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    
+
+}
+
+.information .side .elements {
+    display: inline-flex;
+    border: 1px solid #A5A5A5;
+    
+
+}
+.information .side .elements .detail {
+    width: 65%;
+    height: auto;
+    padding: 1rem;
+}
+
+.information .side .elements img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+    object-fit: cover;
+
 }
 
 /* Courses Section */
 .courses {
     background-color: #CDCDCD;
-
 }
 
 /* Thesis Section */
@@ -94,9 +153,25 @@ nav .options li {
 }
 
 /* Footer Section */
-.footer {
+footer {
     background-color:  #EAEBEC;
+    width: 100%;
+    display: flex;
+
 }
+
+footer .legal {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+footer li {
+    list-style: none;
+    display: inline-flex;
+    text-align: right;
+}
+
+
 
 
 
